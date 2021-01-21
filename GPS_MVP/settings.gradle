@@ -1,0 +1,5 @@
+include ':data-layer'
+include ':models'
+include ':domain-layer'
+include ':app'
+rootProject.name = "GPS_MVP"

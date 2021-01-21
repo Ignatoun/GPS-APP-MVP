@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".features.main.view.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editTextPersonName"
+            style="@style/EditTextCraneStyle"
+            android:hint="@string/enter_name"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/editTextTripName"
+            style="@style/EditTextCraneStyle"
+            android:hint="@string/enter_trip_name"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/btnStart"
+            style="@style/ButtonCraneStyle"
+            android:background="@drawable/rounded_button"
+            android:text="@string/start_location_scan" />
+
+        <Button
+            android:id="@+id/btnPauseResumeLocation"
+            style="@style/ButtonCraneStyle"
+            android:background="@drawable/rounded_button"
+            android:clickable="false"
+            android:enabled="false"
+            android:text="@string/pause_location_scan" />
+
+        <Button
+            android:id="@+id/btnStopLocation"
+            style="@style/ButtonCraneStyle"
+            android:background="@drawable/rounded_button"
+            android:clickable="false"
+            android:enabled="false"
+            android:text="@string/stop_location_scan" />
+
+        <ProgressBar
+            android:id="@+id/pBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:indeterminateOnly="true"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnTrips"
+            style="@style/ButtonCraneStyle"
+            android:background="@drawable/rounded_button"
+            android:text="@string/show_user_s_trips" />
+
+        <Button
+            android:id="@+id/btnDatabase"
+            style="@style/ButtonCraneStyle"
+            android:background="@drawable/rounded_button"
+            android:text="@string/show_database"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+</ScrollView>

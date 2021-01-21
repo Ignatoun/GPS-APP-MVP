@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.8">
+      <module name="data-layer" target="1.7" />
+      <module name="domain-layer" target="1.7" />
+      <module name="GPS_MVP.data-lib" target="1.8" />
+      <module name="models" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

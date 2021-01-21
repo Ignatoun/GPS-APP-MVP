@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".features.user_trip_activity.view.UserTripActivity"
+    android:baselineAligned="false"
+    android:animateLayoutChanges="true"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewTrips"
+        android:dividerHeight="2dp" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/pBar"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:indeterminateOnly="true"
+            android:visibility="gone"
+            android:progressDrawable="@drawable/circular_progress_bar" />
+
+    <LinearLayout
+        android:id="@+id/errorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvConnectionError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="@string/connection_error"
+            android:textSize="24sp"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/imgErrorIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_baseline_outlet_24"
+            android:visibility="visible"
+            android:contentDescription="@string/error_displaying_data_icon" />
+
+        <TextView
+            android:id="@+id/tvTryAgainLater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="@string/try_again_later"
+            android:textSize="24sp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</LinearLayout>

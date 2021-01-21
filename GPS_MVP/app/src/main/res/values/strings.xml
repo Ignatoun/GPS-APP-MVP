@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GPS_MVP</string>
+    <string name="start_location_scan">START LOCATION SCAN</string>
+    <string name="stop_location_scan">STOP LOCATION SCAN</string>
+    <string name="show_database">Show database</string>
+    <string name="pause_location_scan">Pause location scan</string>
+    <string name="location_service">Location Service</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_trip_name">Enter trip name</string>
+    <string name="show_user_s_trips">Show user\'s trips</string>
+    <string name="your_trips">Your trips</string>
+    <string name="date_format">yyyy-MM-dd HH:mm:ss a</string>
+    <string name="resume_location_scan">Resume Location Scan</string>
+    <string name="view_map">View map</string>
+    <string name="start_date">Start date: </string>
+    <string name="finish_date">; \nFinishDate: </string>
+    <string name="semicolon">;</string>
+    <string name="locations">Locations:\n</string>
+    <string name="connection_error">There should\'ve been yor data, but it had disappeared</string>
+    <string name="try_again_later">Try again later!</string>
+    <string name="error_displaying_data_icon">Error displaying data</string>
+    <string name="tvLatitude">Latitude:\t</string>
+    <string name="tvLongitude">Longitude:\t</string>
+    <string name="local_database_location_service_stopped">Location service is currently stopped</string>
+</resources>
